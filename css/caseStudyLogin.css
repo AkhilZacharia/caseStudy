@@ -1,0 +1,8 @@
+#box{
+     margin: 12% 30%;
+    border: solid 2px green;
+    padding: 10px;
+    align-self: center;
+    max-width: 400px;
+    min-width: auto;
+}
