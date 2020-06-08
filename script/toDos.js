@@ -1,6 +1,7 @@
 
 //******************** table*****************//
 $(document).ready(function(){
+    alert("please wait while we load");
 function list(){
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange= function(){
