@@ -1,11 +1,3 @@
-//$(document).ready(function(){
-    // $("#title").css("color","indigo");
-    // // $("#title").css("background-color","indigo");
-    // $("#title").hide(3000,()=>{
-    //     $("#title").html("<h3>Change</h3>").show();
-    // });
-
-    //})
 
     // //=================callback=================
     function validate(callback){
