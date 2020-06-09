@@ -22,17 +22,17 @@
     </nav>
     <div class="container">
         <h2 id="title">Logging in...</h2>
-        <p> Welcome you have successfully logged in.</p>  
+        <p> Welcome you have successfully logged in. Click on the 'To Do List ' option on the menu to view the list..</p>  
         <!-- <input class="checkboxes" type="checkbox"  id="chkbox" checked ></input> -->
     </div>
 <script>
     $(document).ready(function(){
         $("#title").css("color","indigo");
     // $("#title").css("background-color","indigo");
-    $("#title").hide(7000,()=>{
-        $("#title").html("<h3>loggedin</h3>").show();
+    $("#title").hide(5000,()=>{
+        $("#title").html("<h3>logged in</h3>").show();
     });
-    alert("press 'To do List' to generate list!");
+    // alert("press 'To do List' to generate list!");
 });
     
 </script>

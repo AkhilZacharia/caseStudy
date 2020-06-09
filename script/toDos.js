@@ -37,25 +37,29 @@ function list(){
     setTimeout(() => {
         alert("page loaded successfully");
         console.log("ready");
-       $("table").on("change",()=>{
-        var p = new Promise(function(resolve,reject){
+    $(".checkboxes").on("change",function(){ 
+        if($(this).is(':checked')) {
             count++;
-            console.log(count);
-            if(count>=5){
-                resolve(`you have completed ${count} tasks successfully!`);
-            }
-            else{
-                reject("wait");
-            }
-        });
-    p
-    .then(function(e){
-        console.log(e);
-        alert(e);
-    })
-    .catch(function(f){
-        console.log(f);
-    })
-       })
+        } else {
+            count--;
+        }
+        console.log(count);
+        var p = new Promise(function(resolve,reject){
+                if(count>=5){
+                    resolve(`you have completed ${count} tasks successfully!`);
+                }
+                else{
+                    reject("wait");
+                }
+            });
+        p
+        .then(function(e){
+            console.log(e);
+            alert(e);
+        })
+        .catch(function(f){
+            console.log(f);
+        })
+})
     }, 4000);
 })
