@@ -1,7 +1,7 @@
 
 //******************** table*****************//
 $(document).ready(function(){
-    alert("please wait while we load");
+    // alert("please wait while we load");
 function list(){
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange= function(){
@@ -19,9 +19,8 @@ function list(){
             var counter = 0;
             items.forEach((element)=>{
              if(element.completed === true){
-             //if(element.completed === "true"){
                 chk[counter].setAttribute("checked","checked");
-                //console.log(chk);
+                chk[counter].setAttribute('disabled', 'disabled');
             }
             counter += 1;
             })
@@ -34,8 +33,9 @@ function list(){
     }
     list();
     // //====================promise============================
-        var count =0;
+    var count =0;
     setTimeout(() => {
+        alert("page loaded successfully");
         console.log("ready");
        $("table").on("change",()=>{
         var p = new Promise(function(resolve,reject){
@@ -57,5 +57,5 @@ function list(){
         console.log(f);
     })
        })
-    }, 5000);
+    }, 4000);
 })
